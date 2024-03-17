@@ -1,0 +1,15 @@
+﻿@page "~/categories/{skip?}/{take?}"
+@model WebApplication2.Pages.CategoriesModel
+@{
+}
+
+<h1>Categories</h1>
+
+
+@foreach(var category in Model.CategoryList)
+{
+       <h4> @category.Id</h4>
+       <h4> @category.Title</h4>
+       <h4> @category.Price</h4>
+
+}
